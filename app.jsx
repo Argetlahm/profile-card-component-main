@@ -10,8 +10,10 @@ const AppContent = () => {
                     <ImageComponent class="img-profile" src="images/image-victor.jpg" alt="profile-image" />
                 </div>
                 <div className="info-container">
-                    <MainTitle title="Victor Crest" />
-                    <Paragraph content="26" />
+                    <div className="group-1">
+                        <MainTitle title="Victor Crest" />
+                        <Paragraph content="26" />
+                    </div>
                     <Paragraph content="London" />
                 </div>
                 <hr />

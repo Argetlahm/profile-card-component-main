@@ -5,8 +5,11 @@
     --rad: 20px;
 }
 
+
 main {
     width: 375px;
+    height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
 body {
@@ -28,32 +31,32 @@ body {
     top: 200px;
 }
 
+.sns-container, .image-container, .info-container, .profile-container {
+    display: flex;
+    
+}
+
 .profile-container {
     width: 90%;
     height: 400px;
-    display: flex;
     flex-direction: column;
     background-color: white;
     z-index: 1;
     border-radius: var(--rad);
+    margin: auto;
 }
 
 .image-container {
     height: 35%;
     border-top-right-radius: var(--rad);
     border-top-left-radius: var(--rad);
-    /* background-color: red; */
     background-image: url("images/bg-pattern-card.svg");
     background-repeat: repeat;
-    display: flex;
     justify-content: center;
     align-items: end;
 }
 
-.sns-container {
-    display: flex;
-    
-}
+
 
 .img-profile {
     border-radius: 50%;
