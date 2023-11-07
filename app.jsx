@@ -14,16 +14,24 @@ const AppContent = () => {
                         <MainTitle title="Victor Crest" />
                         <Paragraph content="26" />
                     </div>
-                    <Paragraph content="London" />
+                    <Paragraph className="location-info" content="London" />
                 </div>
                 <hr />
                 <div className="sns-container">
-                    <Paragraph content="80K" />
-                    <Paragraph content="Followers" />
-                    <Paragraph content="803K" />
-                    <Paragraph content="Likes" />
-                    <Paragraph content="1.4K" />
-                    <Paragraph content="Photos" />
+                    <div className="sns">
+                        <Paragraph content="80K" />
+                        <Paragraph content="Followers" />
+                    </div>
+                    <div className="sns">
+                        <Paragraph content="803K" />
+                        <Paragraph content="Likes" />
+                    </div>
+                    <div className="sns">
+                        <Paragraph content="1.4K" />
+                        <Paragraph content="Photos" />
+                    </div>
+                    
+                    
                 </div>
             </div>
             
@@ -37,7 +45,7 @@ function ImageComponent (props) {
 }
 
 function Paragraph (props) {
-    return <p>{props.content}</p>
+    return <p className={props.className}>{props.content}</p>
 }
 
 function MainTitle (props) {

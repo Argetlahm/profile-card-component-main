@@ -5,45 +5,94 @@
     --rad: 20px;
 }
 
+/* untuk garis pemisah */
+hr {
+    width: 100%;
+    border: hsla(0, 0%, 59%, 20%) 1px solid;
+    
+}
 
 main {
     width: 375px;
-    height: 100vh;
     font-family: 'Kumbh Sans', sans-serif;
+    color: hsl(0, 0%, 59%);
 }
 
 body {
     background-color: hsl(185, 75%, 39%);
+    
 }
 
+.container {
+    align-items: center;
+    height: 100vh;
+}
+
+/* motif lingkaran untuk bg */
 .pattern {
-    position: absolute;
+    position: fixed;
     z-index: -1;
 }
 
+/* lingkaran atas */
 .top {
     left: -700px;
     top: -600px;
 }
 
+/* lingkaran bawah */
 .bottom {
-    left: 150px;
-    top: 200px;
+    right: -750px;
+    bottom: -600px;
 }
 
-.sns-container, .image-container, .info-container, .profile-container {
+.group-1 h1{
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 10px;
+    color: hsl(229, 23%, 23%);
+}
+
+/* untuk nama kota */
+.location-info {
+    position: relative;
+    bottom: 20px;
+}
+
+/* flex command */
+.sns-container, .image-container, .info-container, .profile-container, .group-1, .container, .sns {
     display: flex;
     
+}
+
+/* flex direction command */
+.sns, .profile-container, .info-container {
+    flex-direction: column;
+}
+
+.sns {
+    margin-top: 0px;
+}
+
+.group-1 {
+    align-items: center;
+    font-size: 18px;
+    margin-top: 60px;
+    margin-bottom: 0;
 }
 
 .profile-container {
     width: 90%;
     height: 400px;
-    flex-direction: column;
     background-color: white;
     z-index: 1;
     border-radius: var(--rad);
     margin: auto;
+}
+
+.info-container {
+    justify-content: center;
+    align-items: center;
 }
 
 .image-container {
