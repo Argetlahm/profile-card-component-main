@@ -19,19 +19,17 @@ const AppContent = () => {
                 <hr />
                 <div className="sns-container">
                     <div className="sns">
-                        <Paragraph content="80K" />
-                        <Paragraph content="Followers" />
+                        <Paragraph className="sns-bold" content="80K" />
+                        <Paragraph className="sns-sub" content="Followers" />
                     </div>
                     <div className="sns">
-                        <Paragraph content="803K" />
-                        <Paragraph content="Likes" />
+                        <Paragraph className="sns-bold" content="803K" />
+                        <Paragraph className="sns-sub" content="Likes" />
                     </div>
                     <div className="sns">
-                        <Paragraph content="1.4K" />
-                        <Paragraph content="Photos" />
+                        <Paragraph className="sns-bold" content="1.4K" />
+                        <Paragraph className="sns-sub" content="Photos" />
                     </div>
-                    
-                    
                 </div>
             </div>
             
